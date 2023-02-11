@@ -26,7 +26,7 @@ def parse_student_topologies():
 
 
 def clean_up(topologies):
-    for file in os.listdir('student_topologies/logs'):
+    for file in os.listdir('.'):
         file_name = file.split('-')[0]
 
         if file_name in topologies and file.endswith('.log'):
