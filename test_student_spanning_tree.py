@@ -61,11 +61,7 @@ def run_spanning_tree_test(topology):
 
 program = sys.argv[0]
 
-topology = "ALL"
-
-if len(sys.argv) == 2:
-    topology = sys.argv[1]
-
+topology = sys.argv[1] if len(sys.argv) == 2 else "ALL"
 number_of_tests_passed = 0
 number_of_tests_failed = 0
 
